@@ -1,3 +1,8 @@
+<HTML>
+<head>
+<TITLE>Дёмин Роман</TITLE>
+</head>
+<BODY>
 <?php
 $n=rand(1, 10000);
 echo('<p>Характер числа '.$n.':<p><br>0');
@@ -10,3 +15,5 @@ for ($i=2; $i<=$n-1; ++$i) {
 }
 echo('='.$sum . '<br>');
 ?>
+</BODY>
+</HTML>

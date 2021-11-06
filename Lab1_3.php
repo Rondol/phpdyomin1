@@ -1,3 +1,8 @@
+<HTML>
+<head>
+<TITLE>Дёмин Роман</TITLE>
+</head>
+<BODY>
 <?php
 $n=rand(1, 10000);
 $m=rand($n, 10000);
@@ -8,3 +13,5 @@ for ($i=$n; $i<=$m; ++$i) {
 	}
 }
 ?>
+</BODY>
+</HTML>

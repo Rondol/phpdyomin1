@@ -1,5 +1,7 @@
 <HTML>
-<TITLE> Таблица умножения </TITLE>
+<head>
+<TITLE>Дёмин Роман</TITLE>
+</head>
 <BODY>
 
 <p> Супер табличка: <br>
