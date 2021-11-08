@@ -4,7 +4,7 @@
 </head>
 <BODY>
 <?php
-require_once "lab2_6_lib.php";
+require_once "Lab2_6_lib.php";
 $arr;
 $n=rand(2,10);
 $m=rand(2,10);
