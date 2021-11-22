@@ -22,12 +22,12 @@
 	</ul>
 	<li>Вторая лабораторная</li>
 	<ul>
-	<li><a href="web/Lab3/Lab3_1.php">Первая работа</a></li>
+	<li><a href="web/Lab3/Lab3_1.html">Первая работа</a></li>
 	<li><a href="web/Lab3/Lab3_2.php">Вторая работа</a></li>
 	<li><a href="web/Lab3/Lab3_3.php">Третья работа</a></li>
 	<li><a href="web/Lab3/Lab3_4.php">Четвёртая работа</a></li>
 	<li><a href="web/Lab3/Lab3_5.php">Пятая работа</a></li>
-	<li><a href="web/Lab3/Lab3_6.php">Шестая работа</a></li>
+	<li><a href="web/Lab3/Lab3_6.html">Шестая работа</a></li>
 	</ul>
 </ul>
 </body>
