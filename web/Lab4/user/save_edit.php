@@ -1,6 +1,11 @@
 <?php
 require "../login.php";
-checkLogin($_SERVER['REQUEST_URI'], false);
+session_start();
+$isSelfChange = true;
+if ($_SESSION['id']==$_GET['id']) {
+    $isSelfChange=false;
+}
+checkLogin($_SERVER['REQUEST_URI'], $isSelfChange);
 ?>
 <html> <body>
 <?php
@@ -9,16 +14,15 @@ $mysqli = new mysqli("localhost", $dbLogin, $dbPassword) or die ("Невозмо
 $mysqli->query('SET NAMES utf-8'); // тип кодировки
  // подключение к базе данных:
 $mysqli->select_db($dbName) or die("Нет такой таблицы!");
- $zapros="UPDATE proglang SET name='".$_GET['name'].
-"', codeType='".$_GET['codeType']."', devYear='"
-.$_GET['devYear']."', clientType='".$_GET['clientType'].
-"', author='".$_GET['author']."' WHERE id="
+ $zapros="UPDATE users SET username='".$_GET['name'].
+"', password='".sha1($_GET['password'])."', type='"
+.$_GET['type']."' WHERE id="
 .$_GET['id'];
 $mysqli->query($zapros);
  if ($mysqli->affected_rows>0) {
- echo 'Все сохранено. <a href="langMain.php"> Вернуться к списку
+ echo 'Все сохранено. <a href="userMain.php"> Вернуться к списку
 языков </a>'; }
- else { echo 'Ошибка сохранения. <a href="langMain.php">
+ else { echo 'Ошибка сохранения. <a href="userMain.php">
 Вернуться к списку языков</a> '; }
 ?>
 </body> </html>

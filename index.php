@@ -32,9 +32,13 @@
 	</ul>
 	<li>Четвёртая лабораторная</li>
 	<ul>
-	<li><a href="web/Lab4/lang/langMain.php">Языки программирования</a></li>
-	<li><a href="web/Lab4/dev/devMain.php">Разработчики</a></li>
-	<li><a href="web/Lab4/apl/aplMain.php">Программы</a></li>
+	<li><a href="web/Lab4/lang/langMain.php?returnURL=lang/langMain.php">Языки программирования</a></li>
+	<li><a href="web/Lab4/dev/devMain.php?returnURL=dev/devMain.php">Разработчики</a></li>
+	<li><a href="web/Lab4/apl/aplMain.php?returnURL=apl/aplMain.php">Программы</a></li>
+	</ul>
+	<li>Пятая лабораторная</li>
+	<ul>
+	<li><a href="web/Lab4/user/userMain.php?returnURL=user/userMain.php">Пользователи</a></li>
 	</ul>
 </ul>
 </body>

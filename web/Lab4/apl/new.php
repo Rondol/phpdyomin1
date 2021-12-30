@@ -1,3 +1,7 @@
+<?php
+require "../login.php";
+checkLogin($_SERVER['REQUEST_URI'], false);
+?>
 <html>
 <head> <title> Добавление новой программы </title> </head>
 <body>

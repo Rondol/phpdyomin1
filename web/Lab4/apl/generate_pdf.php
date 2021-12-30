@@ -1,5 +1,9 @@
 <?php
+require "../login.php";
+checkLogin($_SERVER['REQUEST_URI'], false);
+
 require_once('fpdf.php');
+require "../bd.php";
 
 class PDF extends FPDF
 {
@@ -20,10 +24,10 @@ function BasicTable($header, $data)
 }
 }
 
-$mysqli = new mysqli("localhost", "root") or die ("Невозможно подключиться к серверу");
+$mysqli = new mysqli("localhost", $dbLogin, $dbPassword) or die ("Невозможно подключиться к серверу");
 $mysqli->query('SET NAMES utf-8'); // тип кодировки
  // подключение к базе данных:
-$mysqli->select_db("labainet") or die("Нет такой таблицы!");
+$mysqli->select_db($dbName) or die("Нет такой таблицы!");
 $aplRes=$mysqli->query("SELECT id, id_lang, id_dev, ver, name FROM apl");
 $header = array('id', 'name', 'ver', 'developer', 'city', 'execType', 'compType');
 $data=array();
